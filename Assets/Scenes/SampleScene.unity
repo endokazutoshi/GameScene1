@@ -244,9 +244,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e20e41448a94bc46839f5784fbec6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tile: {fileID: 9127038761830570015, guid: 851d6a6e8977d6a40b6fb7bed4c3703c, type: 3}
-  _rows: 25
-  _cols: 10
+  _wallPrefab: {fileID: 9127038761830570015, guid: 851d6a6e8977d6a40b6fb7bed4c3703c, type: 3}
+  _tilePrefab: {fileID: 7782792457090277023, guid: 72979e048c0068a4fa29a247350102f2, type: 3}
+  _length: 23
+  _width: 10
 --- !u!4 &1430184508
 Transform:
   m_ObjectHideFlags: 0
