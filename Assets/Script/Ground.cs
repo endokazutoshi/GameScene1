@@ -4,6 +4,13 @@ public class Ground : MonoBehaviour
 {
     [SerializeField] private GameObject _wallPrefab;
     [SerializeField] private GameObject _tilePrefab;
+
+    const int _nLengthStart = 1;
+    const int _nWidthStart = 1;
+    const int _nLengthEnd = 22;
+    const int _nWidthEnd = 9;
+    const int _nCenter = 11;
+
     [SerializeField] private int _length;
     [SerializeField] private int _width;
     private void Start()
@@ -12,7 +19,7 @@ public class Ground : MonoBehaviour
         {
             for (int width = 0; width < _width; width++)
             {
-                if (length >= 1 && length < 22 && width >= 1 && width < 9) // ‰¡‚ÌÀ•W‚ª0‚©‚ç22‚Ì”ÍˆÍ‚Ìê‡
+                if (length >= _nLengthStart && length < _nLengthEnd && width >= _nWidthStart && width < _nWidthEnd) // ‰¡‚ÌÀ•W‚ª0‚©‚ç22‚Ì”ÍˆÍ‚Ìê‡
                 {
                     Instantiate(_wallPrefab, new Vector3(length, width, 0), Quaternion.identity, transform);
                 }
@@ -21,7 +28,7 @@ public class Ground : MonoBehaviour
                     Instantiate(_tilePrefab, new Vector3(length, width, 0), Quaternion.identity, transform);
 
                 }
-                if (length >= 11 && length < 12)
+                if (length == _nCenter)
                 {
                     Instantiate(_tilePrefab, new Vector3(length, width, 0), Quaternion.identity, transform);
                 }
