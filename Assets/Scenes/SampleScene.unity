@@ -244,10 +244,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e20e41448a94bc46839f5784fbec6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallPrefab: {fileID: 9127038761830570015, guid: 851d6a6e8977d6a40b6fb7bed4c3703c, type: 3}
-  _tilePrefab: {fileID: 7782792457090277023, guid: 72979e048c0068a4fa29a247350102f2, type: 3}
-  _length: 23
-  _width: 10
+  _length: 10
+  _width: 23
+  _wallPrefab: {fileID: 7782792457090277023, guid: 72979e048c0068a4fa29a247350102f2, type: 3}
+  _tilePrefab: {fileID: 9127038761830570015, guid: 851d6a6e8977d6a40b6fb7bed4c3703c, type: 3}
 --- !u!4 &1430184508
 Transform:
   m_ObjectHideFlags: 0
@@ -293,8 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db9a5e8f55e41c488605c6534116502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  initialPosition: {x: 2, y: 2}
+  _initialPosition: {x: 0, y: 0}
 --- !u!212 &1646936444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -392,8 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db9a5e8f55e41c488605c6534116502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  initialPosition: {x: 13, y: 4}
+  _initialPosition: {x: 0, y: 0}
 --- !u!212 &1657941404
 SpriteRenderer:
   m_ObjectHideFlags: 0
